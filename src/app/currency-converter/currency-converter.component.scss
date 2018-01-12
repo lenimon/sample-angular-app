@@ -1,0 +1,37 @@
+.base{
+    width: 290px;
+    border-radius: 10px;    
+    background: #93cede; /* Old browsers */
+    background: -moz-linear-gradient(top, #93cede 0%, #75bdd1 41%, #49a5bf 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #93cede 0%,#75bdd1 41%,#49a5bf 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #93cede 0%,#75bdd1 41%,#49a5bf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf',GradientType=0 ); /* IE6-9 */
+
+    h3{
+        text-align: center;
+        padding: 5px;
+    }
+    .vbox{
+        margin: auto;
+        padding: 10px;
+        height: 135px;
+        .hbox{
+            width: 100%;
+            margin: 5px;
+            input{
+                height: 25px;
+                width: 200px;
+            }
+            select{
+                height: 30px;
+            }
+        }
+        label{
+            margin-left: 6px;
+        }
+        a{
+            float: right;
+            margin-right: 5px;
+        }
+    }
+}

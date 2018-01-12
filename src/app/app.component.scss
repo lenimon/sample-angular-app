@@ -1,0 +1,11 @@
+.component-holder{
+    margin: auto;
+    width: 57%;
+    .item-holder{
+        list-style: none;
+    }
+    .item{
+        float: left;
+        margin: 20px;
+    }
+}
