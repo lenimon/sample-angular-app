@@ -1,5 +1,7 @@
 .base{
     width: 290px;
+    min-width: 280px;
+    min-height: 223px;
     border-radius: 10px;    
     background: #93cede; /* Old browsers */
     background: -moz-linear-gradient(top, #93cede 0%, #75bdd1 41%, #49a5bf 100%); /* FF3.6-15 */
@@ -10,6 +12,18 @@
     h3{
         text-align: center;
         padding: 5px;
+    }
+    .spinner-holder{
+        width: 290px;
+        background: #000;
+        z-index: 1000000;
+        .spinner{
+            background-image: url(/assets/modal-loader.gif);
+            background-size: 250px;            
+            background-repeat: no-repeat;
+            position: absolute;
+            padding: 80px;
+        }
     }
     .vbox{
         margin: auto;

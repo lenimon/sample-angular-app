@@ -1,16 +1,17 @@
 <div class="base">
+  <div #spinner class="spinner-holder"><span class="spinner"></span></div>
   <h3> Currency Converter </h3>
   <div class="vbox">
     <label>Type in amount and select currency:</label>
     <div class="hbox">
-      <input type="number" #ft name="from-currency-txt" (keyup)="onCurrencyValueChange(ft,tc.value,tt)">
+      <input type="text" #ft name="from-currency-txt" pattern="[0-9]" (keyup)="onCurrencyValueChange(ft,tc.value,tt)">
       <select name="from-currency-combo" #fc (change)="onSelectBaseCurrencyType(fc.value, ft, tt)">
         <option *ngFor="let currency of baseCurrencies" [value]="currency">{{currency}}</option>
       </select>
     </div>
     <label>Converted amount:</label>
     <div class="hbox">
-      <input type="number" readonly=true #tt name="to-currency-txt" (keyup)="onCurrencyValueChange(tt,fc.value,ft)">
+      <input type="text" readonly=true #tt name="to-currency-txt" pattern="[0-9]" (keyup)="onCurrencyValueChange(tt,fc.value,ft)">
       <select name="to-currency-combo" #tc (change)="onSelectToCurrencyType(tc.value, tt, ft)">
         <option *ngFor="let currency of baseCurrencies" [value]="currency">{{currency}}</option>
       </select>
